@@ -41,9 +41,9 @@ $(function() {
    // $('.shopping-list').find('.shopping-item').addClass('.shopping-item__checked')
 //});
 
-$("button.shopping-item-toggle").click(function(event) {
-    $('.shopping-item').addClass('.shopping-item__checked');
-});
+$('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
+$('.shopping-item').toggleClass('shopping-item__checked');
+})
    
 
 

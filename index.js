@@ -24,8 +24,8 @@ $(function() {
     });
 
 
-   $('ul').on('click', 'li', function(event) {
-    this.remove();
+   $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
+   $(event.currentTarget).closest('li').remove();
         
 
 
@@ -34,7 +34,8 @@ $(function() {
 
 
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-$('.shopping-item').toggleClass('shopping-item__checked');
+$(event.currentTarget).closest('li').find('.shopping-item').addClass('shopping-item__checked');
+
 })
    
 

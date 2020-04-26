@@ -30,16 +30,8 @@ $(function() {
 
 
 });
-// toDos.find('.js-complete').addClass('complete');
 
-    //$('ul').on('click', 'li', function(event) {
-    //this.remove();
-    // });
 
-    //$('button.shopping-item-toggle').click(function(event) {
-
-   // $('.shopping-list').find('.shopping-item').addClass('.shopping-item__checked')
-//});
 
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
 $('.shopping-item').toggleClass('shopping-item__checked');

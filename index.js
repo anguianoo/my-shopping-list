@@ -7,7 +7,7 @@ $(function() {
         $('ul').append(
             `
             <li>
-        <span class="shopping-item">${userTextElement.val()}</span>
+        <span class="shopping-item makeGreen">${userTextElement.val()}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
             <span class="button-label">check</span>
@@ -34,7 +34,8 @@ $(function() {
 
 
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-$(event.currentTarget).closest('li').find('.shopping-item').addClass('shopping-item__checked');
+
+$(this).closest('li').find('.shopping-item').removeClass('makeGreen').toggleClass('makeRed').toggleClass('shopping-item__checked');
 
 })
    
